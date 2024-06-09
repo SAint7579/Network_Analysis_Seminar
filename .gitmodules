@@ -1,0 +1,3 @@
+[submodule "brain-network-analysis"]
+	path = brain-network-analysis
+	url = https://github.com/paolomandica/brain-network-analysis
