@@ -1,1 +1,5 @@
 Dataset/brain-network-analysis
+*.edf
+*.eeg
+*.vhdr
+*.vmrk
