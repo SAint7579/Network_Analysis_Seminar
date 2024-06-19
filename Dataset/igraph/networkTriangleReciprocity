@@ -31,11 +31,10 @@ print(g_open)
 ergm_model_open <- ergm(g_open ~ edges + nodecov("delta") + nodecov("theta") + nodecov("alpha") + nodecov("gamma") + nodecov("beta") +
                         nodefactor("frontal") + nodefactor("temporal") + nodefactor("parietal") + nodefactor("occipital") +
                         nodefactor("central") + nodematch("frontal") + nodematch("temporal") + nodematch("parietal") + nodematch("occipital") + nodematch("central") +
-                        mutual + triadcensus(levels = c(1, 2)),
+                        mutual,
                         control = control.ergm(
                           MCMC.burnin = 1000,
-                          MCMC.interval = 100,
-                          MCMLE.maxit = 10 # Maximum number of iterations for MCMLE
+                          MCMC.interval = 100# Maximum number of iterations for MCMLE
                         ))
 
 # Print summary of the model
